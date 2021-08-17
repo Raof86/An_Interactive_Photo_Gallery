@@ -1,0 +1,20 @@
+.wrapper {
+    display: grid;
+    grid-gap:10px;
+    grid-template-columns: repeat(3, [col] 100px);
+}
+
+.a {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.b {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.c {
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
