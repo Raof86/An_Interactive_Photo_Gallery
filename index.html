@@ -11,20 +11,53 @@
     <form>
       <input type="text" placeholder="Search" name="search">
     </form>  
-      <div class="wrapper">
-        <div class="a"><img src="photos/01.jpg"></div>
-        <div class="a"><img src="photos/02.jpg"></div>
-        <div class="a"><img src="photos/03.jpg"></div>
-        <div class="a"><img src="photos/04.jpg"></div>
-        <div class="a"><img src="photos/05.jpg"></div>
-        <div class="a"><img src="photos/06.jpg"></div>
-        <div class="a"><img src="photos/07.jpg"></div>
-        <div class="a"><img src="photos/08.jpg"></div>
-        <div class="a"><img src="photos/09.jpg"></div>
-        <div class="a"><img src="photos/10.jpg"></div>
-        <div class="a"><img src="photos/11.jpg"></div>
-        <div class="a"><img src="photos/12.jpg"></div>
-      </div>
-      <script src="js/baguetteBox.min.js"></script>​
+
+    <div class="gallery">
+      <a href="photos/01.jpg" title="Farm" data-caption="Farm">
+          <img src="photos/thumbnails/01.jpg" alt="First image">
+      </a>
+      <a href="photos/02.jpg">
+          <img src="photos/thumbnails/02.jpg" alt="Second image">
+      </a>
+      <a href="photos/03.jpg">
+        <img src="photos/thumbnails/03.jpg" alt="Second image">
+    </a>
+    <a href="photos/04.jpg">
+      <img src="photos/thumbnails/04.jpg" alt="Second image">
+    </a>
+    <a href="photos/05.jpg">
+      <img src="photos/thumbnails/05.jpg" alt="Second image">
+    </a>
+    <a href="photos/06.jpg">
+      <img src="photos/thumbnails/06.jpg" alt="Second image">
+    </a>
+    <a href="photos/07.jpg">
+      <img src="photos/thumbnails/07.jpg" alt="Second image">
+    </a>
+    <a href="photos/08.jpg">
+      <img src="photos/thumbnails/08.jpg" alt="Second image">
+    </a>
+    <a href="photos/09.jpg">
+      <img src="photos/thumbnails/09.jpg" alt="Second image">
+    </a>
+    <a href="photos/10.jpg">
+      <img src="photos/thumbnails/10.jpg" alt="Second image">
+    </a>
+    <a href="photos/11.jpg">
+      <img src="photos/thumbnails/11.jpg" alt="Second image">
+    </a>
+    <a href="photos/12.jpg">
+      <img src="photos/thumbnails/12.jpg" alt="Second image">
+    </a>
+    
+  </div>
     </body>
+    <script src="js/baguetteBox.min.js"></script>
+
+    <script>
+      window.addEventListener('load', function() {
+        baguetteBox.run('.gallery');
+      });
+      </script>
+
     </html>

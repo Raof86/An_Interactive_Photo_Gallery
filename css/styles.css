@@ -1,15 +1,10 @@
-.wrapper {
+.gallery {
     display: grid;
-    grid-row-gap:15px;
-    grid-column-gap:20px;
+    grid-row-gap:10px;
     grid-template-columns: repeat(4, [col] 250px ) ;
     grid-template-rows: repeat(3, [row] auto  );
     max-width: 1000px;
     margin: auto;
-}
-
-.a img {
-    max-width:100%;  
 }
 
 form {
