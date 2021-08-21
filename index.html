@@ -9,10 +9,10 @@
   </head>
   <body>
     <form>
-      <input type="text" placeholder="Search" name="search">
+      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search" name="search">
     </form>  
 
-    <div class="gallery">
+    <div class="gallery" id=myGallery>
       <a href="photos/01.jpg" title="Farm" data-caption="Farm">
           <img src="photos/thumbnails/01.jpg" alt="First image">
       </a>
@@ -59,5 +59,27 @@
         baguetteBox.run('.gallery');
       });
       </script>
+
+<script>
+  function myFunction() {
+    // Declare variables
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById('myInput');
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myGallery");
+    li = ul.getElementsByTagName('li');
+  
+    // Loop through all list items, and hide those who don't match the search query
+    for (i = 0; i < li.length; i++) {
+      a = li[i].getElementsByTagName("a")[0];
+      txtValue = a.textContent || a.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        li[i].style.display = "";
+      } else {
+        li[i].style.display = "none";
+      }
+    }
+  }
+  </script>
 
     </html>
