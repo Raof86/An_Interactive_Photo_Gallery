@@ -1,14 +1,19 @@
 
-.gallery {
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* .gallery {
     display: grid;
     row-gap: 10px;
     grid-template-columns: repeat(1, [col] 300px ) ;
     grid-template-rows: repeat(12, [row] auto );
     margin-left: 25%;
-}
+} */
 
 form {
-    margin-left:10%;
     margin-bottom: 20px;
 }
 
@@ -21,7 +26,7 @@ border-radius: 7px;
 text-indent: 5px;
 }
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .gallery {
     display: grid;
     grid-template-columns: repeat(2, [col] 250px ) ;
@@ -90,4 +95,4 @@ text-indent: 5px;
     border-radius: 7px;
     text-indent: 5px;
     }
-}
+} */
