@@ -1,15 +1,9 @@
 
-.container {
+.container, .gallery {
     display: flex;
-    row-gap: 10px;
-    /* grid-template-columns: repeat(1, [col] 1fr);
-    grid-template-rows: repeat(12, [row] auto); */
-    /* margin-left: 25%; */
-    /* justify-items: center; */
     flex-direction: column;
     align-items: center;
 }
-
 
 form {
     margin-bottom: 20px;
@@ -23,13 +17,13 @@ border-color: lightgrey;
 border-radius: 7px;
 text-indent: 5px;
 }
-/* 
+
 @media (min-width:768px) {
     .gallery {
     display: grid;
-    grid-template-columns: repeat(2, [col] auto ) ;
-    grid-template-rows: repeat(6, [row] auto );
-    justify-items: center;
+    grid-template-columns: repeat(2, [col] auto);
+    column-gap: 10px;
+    row-gap: 10px;
     }
 
     form {
@@ -52,12 +46,12 @@ text-indent: 5px;
         .gallery {
         display: grid;
         grid-template-columns: repeat(4, [col] auto ) ;
-        grid-template-rows: repeat(3, [row] auto );
-        justify-items: center;
+        column-gap: 10px;
+        row-gap: 10px;
         }
 
         form {
-            margin-left:16%;
+            margin-top: 10px;
             margin-bottom: 20px;
         }
         
@@ -70,26 +64,3 @@ text-indent: 5px;
         text-indent: 5px;
         }
 }
-
-@media (min-width:1440px) {
-    .gallery {
-    display: grid;
-    grid-template-columns: repeat(4, [col] auto ) ;
-    grid-template-rows: repeat(3, [row] auto );
-    justify-items: center;
-    }
-
-    form {
-        margin-left:26%;
-        margin-bottom: 20px;
-    }
-    
-    input {
-    height: 40px;
-    width: 655px;
-    margin-top: 20px;
-    border-color: lightgrey;
-    border-radius: 7px;
-    text-indent: 5px;
-    }
-}  */
